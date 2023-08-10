@@ -1,0 +1,64 @@
+.c {
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  padding: 100px 100px 100px 100px;
+}
+
+.top {
+  font-family: 'Luminari', fantasy;
+  font-size: 40px;
+  text-align: center;
+  justify-content: center;
+}
+
+.top2 {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+.c {
+  margin: auto;
+  width: 80%;
+  height: 300px;
+  position: relative;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container {
+  height: 30px;
+  position: relative;
+
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.try {
+  justify-content: center;
+
+}
+
+.try button {
+  font-family: 'Luminari', fantasy;
+  font-size: 20px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+}
+
+.mid {
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}

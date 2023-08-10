@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+
+.frame {
+  position: middle;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  border-radius: 2px;
+  box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: #333;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 150px;
+  width: 400px;
+  transform: perspective(60px) translate(-50%, -50%);
+  transform-style: preserve-3d;
+}
+
+.card {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 125px;
+  border: 5px solid #fff;
+}
+
+.card img {
+  width: 100%;
+}
+
+#card1 {
+  animation: cardAnim 6s ease-in-out infinite;
+}
+
+#card2 {
+  animation: cardAnim 6s ease-in-out infinite;
+  animation-delay: -2s;
+}
+
+#card3 {
+  animation: cardAnim 6s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+@keyframes cardAnim {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    //z-index: 2;
+  }
+
+  33.33% {
+    transform: translate3d(10px, -50%, -50px);
+    //z-index: 1;
+  }
+
+  66.67% {
+    transform: translate3d(-350px, -50%, -50px);
+  }
+}
+
+#card4 {
+  animation: cardAnim 6s ease-in-out infinite;
+  animation-delay: -4s;
+}
+
+@keyframes cardAnim {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+    //z-index: 2;
+  }
+
+  33.33% {
+    transform: translate3d(10px, -50%, -50px);
+    //z-index: 1;
+  }
+
+  66.67% {
+    transform: translate3d(-350px, -50%, -50px);
+  }
+}

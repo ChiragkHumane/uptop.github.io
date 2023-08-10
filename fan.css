@@ -1,0 +1,168 @@
+.bigbox {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.box {
+  width: 50%;
+  height: auto;
+  background-color: lightgray;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  list-style-type: none;
+  text-orientation: mixed;
+}
+
+.sb li {
+  font-size: 20px;
+  writing-mode: vertical-lr;
+  padding-top: 80px;
+  padding-left: 30px;
+  width: 100px;
+  height: 300px;
+  border: 2px solid gray;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  transition: 5s;
+  border-radius: 15px;
+  text-orientation: mixed;
+
+}
+
+.sb li:last-chlid::after {
+  content: "";
+  padding: 10px;
+  position: absolute;
+  background-color: blue;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  border-radius: 50%;
+  border: 1px solid gray;
+  text-orientation: mixed;
+}
+
+.sb li:nth-child(1) {
+  transform: rotate(-60deg);
+  transform-origin: 50% 80%;
+  background-color: red;
+  animation: 5s ani1 cubic-bezier(0.43, 0.35, 0.6, 0.95) infinite;
+  text-orientation: mixed;
+}
+
+.sb li:nth-child(2) {
+  transform: rotate(-30deg);
+  transform-origin: 50% 80%;
+  background-color: white;
+  animation: 5s ani2 cubic-bezier(0.43, 0.35, 0.6, 0.95) infinite;
+  text-orientation: mixed;
+}
+
+.sb li:nth-child(3) {
+  transform: rotate(0deg);
+  transform-origin: 50% 80%;
+  background-color: green;
+  animation: 5s ani3 cubic-bezier(0.43, 0.35, 0.6, 0.95) infinite;
+  text-orientation: mixed;
+}
+
+.sb li:nth-child(4) {
+  transform: rotate(30deg);
+  transform-origin: 50% 80%;
+  background-color: blue;
+  animation: 5s ani4 cubic-bezier(0.43, 0.35, 0.6, 0.95) infinite;
+  text-orientation: mixed;
+}
+
+.sb li:nth-child(5) {
+  transform: rotate(-60deg);
+  transform-origin: 50% 80%;
+  background-color: yellow;
+  animation: 5s ani5 cubic-bezier(0.43, 0.35, 0.6, 0.95) infinite;
+  text-orientation: mixed;
+}
+
+@keyframes ani1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(-60deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ani2 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(-30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ani4 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(30deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes ani5 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(0deg);
+  }
+
+  80% {
+    transform: rotate(60deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
